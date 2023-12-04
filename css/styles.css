@@ -6,10 +6,14 @@ h1, h2, h3, p, a, body, main, ul, li, section, nav{
 
 #hamburger-menu {
     display: block;
+    cursor: pointer;
+    font-size: 1.5em;
 }
 
 #nav-list {
-    display: block;
+    display: none;
+    list-style: none;
+    padding: 0;
 }
 
 #nav-list li {
@@ -24,6 +28,7 @@ h1, h2, h3, p, a, body, main, ul, li, section, nav{
 #nav-list li a {
     text-decoration: none;
     color: black;
+    font-size: 1.5em;
 }
 
 body {
@@ -62,23 +67,20 @@ footer {
 
     #hamburger-menu {
         display: none;
-        cursor: pointer;
     }
-    
+
     #nav-list {
-        list-style: none;
-        padding: 0;
+        display: block;
     }
-    
+
     #nav-list li {
         display: inline;
-        margin: 0 10px;
     }
     
     #nav-list li a {
-        text-decoration: none;
         color: black;
     }
+
 }
 
 /* Responsive design for desktops */
