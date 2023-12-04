@@ -5,7 +5,10 @@ h1, h2, h3, p, a, body, main, ul, li, section, nav{
 }
 
 #hamburger-menu {
+    float: right;
     display: block;
+    padding-top: 0.5em;
+    margin-right: 1.5em;
     cursor: pointer;
     font-size: 1.5em;
 }
