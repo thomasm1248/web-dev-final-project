@@ -69,10 +69,18 @@ footer {
         list-style: none;
         padding: 0;
     }
+
+    #nav-list ul {
+        padding: 10px 0px;
+    }
     
     #nav-list li {
         display: inline;
-        margin: 0 10px;
+        margin: 0px;
+        padding: 10px 0px;
+        text-align: center;
+        background-color: none;
+
     }
     
     #nav-list li a {
