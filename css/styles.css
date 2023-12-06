@@ -1,0 +1,157 @@
+/* CSS Styles Reset */
+h1, h2, h3, p, a, body, header, main, ul, li, section, nav{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body rules */
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header rules */
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 4em;
+}
+
+header img {
+    width: 4.5em;
+    height: 3.5em;
+    float: left;
+    margin-left: 0.5em;
+    margin-top: 0.2em;
+}
+
+header h1 {
+    padding-top: 0.2em;
+}
+
+#hamburger-menu {
+    float: right;
+    display: block;
+    padding-top: 0.7em;
+    margin-right: 1.5em;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Nav rules */
+
+#nav-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+#nav-list li {
+    display: block;
+    margin: 0px;
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: grey;
+}
+
+#nav-list li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+/* Hero image rules */
+
+#hero-image {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 15em;
+}
+
+/* Main body rules */
+
+section {
+    margin: 1em 0;
+    padding: 1em;
+}
+
+section ul {
+    margin-left: 2em;
+}
+
+section h2, section p, section li {
+    margin-bottom: 0.5em;
+}
+
+section p, section li {
+    font-size: 1.5em;
+}
+
+/* Footer rules */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Responsive design for tablets */
+@media (min-width: 480px) {
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    #hero-image {
+        height: 30em;
+    }
+
+    #nav-list {
+        display: block;
+        background-color: grey;
+        text-align: center;
+    }
+
+    #nav-list li {
+        display: inline-block;
+        border: none;
+        padding: 0.2em 0.5em;
+    }
+    
+    #nav-list li a {
+        color: black;
+    }
+
+}
+
+/* Responsive design for desktops */
+@media (min-width: 768px) {
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 2em;
+    }
+
+    #nav-list {
+        text-align: left;
+    }
+
+    #nav-list li {
+        margin-left: 2em;
+        padding: 0.2em 0.5em;
+    }
+
+    #nav-list li:hover {
+        background-color: white;
+        color: gray;
+    }
+
+}
