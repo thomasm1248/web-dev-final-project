@@ -92,10 +92,14 @@ footer {
 
     #nav-list {
         display: block;
+        background-color: grey;
+        text-align: center;
     }
 
     #nav-list li {
-        display: inline;
+        display: inline-block;
+        border: none;
+        padding: 0.2em 0.5em;
     }
     
     #nav-list li a {
@@ -106,5 +110,25 @@ footer {
 
 /* Responsive design for desktops */
 @media (min-width: 768px) {
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 2em;
+    }
+
+    #nav-list {
+        text-align: left;
+    }
+
+    #nav-list li {
+        margin-left: 2em;
+        padding: 0.2em 0.5em;
+    }
+
+    #nav-list li:hover {
+        background-color: white;
+        color: gray;
+    }
 
 }
