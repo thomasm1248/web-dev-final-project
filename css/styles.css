@@ -71,7 +71,7 @@ header h1 {
     background-image: url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
-    height: 30em;
+    height: 15em;
 }
 
 /* Main body rules */
@@ -81,11 +81,15 @@ section {
     padding: 1em;
 }
 
-section h2, section p {
+section ul {
+    margin-left: 2em;
+}
+
+section h2, section p, section li {
     margin-bottom: 0.5em;
 }
 
-section p {
+section p, section li {
     font-size: 1.5em;
 }
 
@@ -103,6 +107,10 @@ footer {
 
     #hamburger-menu {
         display: none;
+    }
+
+    #hero-image {
+        height: 30em;
     }
 
     #nav-list {
