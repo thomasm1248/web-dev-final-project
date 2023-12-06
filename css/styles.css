@@ -67,10 +67,11 @@ header h1 {
 
 /* Hero image rules */
 
-#hero {
-    background-color: #ddd;
-    padding: 2em;
-    text-align: center;
+#hero-image {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30em;
 }
 
 /* Main body rules */
