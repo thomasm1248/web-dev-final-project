@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#profile img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hobby-flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    flex-basis: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.hobby img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#dream {
+    text-align: center; /* Center content in dream section */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .hobby {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hobby-flex-container {
+        flex-direction: column;
+    }
+
+    .hobby {
+        flex-basis: 100%;
+    }
+}
