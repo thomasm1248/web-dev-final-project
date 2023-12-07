@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required meta tags from Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <title>Tank Store</title>
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <img href="#">
-        <h1>Site Name </h1>
         <div id="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <img src="images/logo-600x450.jpg">
+        <h1>Tank Store</h1>
     </header>
 
+    <!-- Navbar -->
     <nav>
         <!-- Hamburger menu for mobile -->
-        
         <ul id="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="catalog.html">Store</a></li>
@@ -27,27 +34,32 @@
     </nav>
 
     <!-- Hero Image -->
-    <div class="jumbotron jumbotron-fluid">
-        <img id="hero-image" src="">
+    <div id="hero-image">
     </div>
 
     <!-- Main body -->
-    <main>
+    <main class="container">
 
-        <section id="welcome">
-            <h1>Welcome to the Tank Store</h1>
-            <p>Your one-stop shop for military and historical tanks</p>
-            <!-- Add a hero image here -->
+        <section id="welcome" class="card">
+            <h2>Welcome!</h2>
+            <p>Welcome to the Tank Store!</p>
+            <p>Your one-stop shop for military and historical tanks.</p>
         </section>
 
-        <section id="featured-tanks">
+        <section id="featured-tanks" class="card">
             <h2>Featured Tanks</h2>
-            <!-- Featured tanks content -->
+            <ul>
+                <li>M1A2 SEP Abrams</li>
+                <li>T-28 Super Heavy Tank</li>
+                <li>and more...</li>
+            </ul>
+            <a href="catalog.html" class="btn btn-outline-primary" role="button">View Catalog &#10140;</a>
         </section>
 
-        <section id="about-us">
+        <section id="about-us" class="card">
             <h2>About Us</h2>
-            <p>Learn more about our mission and team</p>
+            <p>Learn more about our mission and team.</p>
+            <a href="about.html" class="btn btn-outline-primary" role="button">About Us &#10140;</a>
         </section>
 
     </main>
@@ -58,9 +70,15 @@
         <div id="social-media">
             <!-- Social media icons here -->
         </div>
-        <p>Designed by: Team Member's Name</p>
+        <p>Designed by: Tank Store Dev Team</p>
     </footer>
 
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Our script -->
     <script src="scripts/script.js"></script>
+
 </body>
 </html>

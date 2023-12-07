@@ -1,15 +1,53 @@
 /* CSS Styles Reset */
-h1, h2, h3, p, a, body, main, ul, li, section, nav{
+h1, h2, h3, p, a, body, header, main, ul, li, section, nav{
     margin: 0;
     padding: 0;
 }
 
-#hamburger-menu {
-    display: block;
+/* Body rules */
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-#nav-list {
+/* Header rules */
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 4em;
+}
+
+header img {
+    width: 4.5em;
+    height: 3.5em;
+    float: left;
+    margin-left: 0.5em;
+    margin-top: 0.2em;
+}
+
+header h1 {
+    padding-top: 0.2em;
+}
+
+#hamburger-menu {
+    float: right;
     display: block;
+    padding-top: 0.7em;
+    margin-right: 1.5em;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Nav rules */
+
+#nav-list {
+    display: none;
+    list-style: none;
+    padding: 0;
 }
 
 #nav-list li {
@@ -24,31 +62,38 @@ h1, h2, h3, p, a, body, main, ul, li, section, nav{
 #nav-list li a {
     text-decoration: none;
     color: black;
+    font-size: 1.5em;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
+/* Hero image rules */
+
+#hero-image {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 15em;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-}
-
-#hero {
-    background-color: #ddd;
-    padding: 2em;
-    text-align: center;
-}
+/* Main body rules */
 
 section {
     margin: 1em 0;
     padding: 1em;
 }
+
+section ul {
+    margin-left: 2em;
+}
+
+section h2, section p, section li {
+    margin-bottom: 0.5em;
+}
+
+section p, section li {
+    font-size: 1.5em;
+}
+
+/* Footer rules */
 
 footer {
     background-color: #333;
@@ -62,12 +107,16 @@ footer {
 
     #hamburger-menu {
         display: none;
-        cursor: pointer;
     }
-    
+
+    #hero-image {
+        height: 30em;
+    }
+
     #nav-list {
-        list-style: none;
-        padding: 0;
+        display: block;
+        background-color: grey;
+        text-align: center;
     }
 
     #nav-list ul {
@@ -81,15 +130,113 @@ footer {
         text-align: center;
         background-color: none;
 
+    #nav-list li {
+        display: inline-block;
+        border: none;
+        padding: 0.2em 0.5em;
     }
     
     #nav-list li a {
-        text-decoration: none;
         color: black;
     }
+
 }
 
 /* Responsive design for desktops */
 @media (min-width: 768px) {
-    /* Styles for tablet */
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 2em;
+    }
+
+    #nav-list {
+        text-align: left;
+    }
+
+    #nav-list li {
+        margin-left: 2em;
+        padding: 0.2em 0.5em;
+    }
+
+    #nav-list li:hover {
+        background-color: white;
+        color: gray;
+    }
+
+}
+
+/* contact us */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+.contact-map,
+.contact-details,
+.contact-form {
+    flex: 1;
+    margin: 10px;
+}
+
+.contact-map {
+    min-height: 300px; 
+}
+
+.contact-details,
+.contact-form {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form {
+    flex-basis: 30%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-map,
+    .contact-details,
+    .contact-form {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact-map {
+        height: 200px; 
+    }
 }
