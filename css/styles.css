@@ -112,6 +112,36 @@ section p, section li {
     border: 2px solid grey;
 }
 
+/* Catalog table rules */
+
+#catalog, #catalog tbody, #catalog tr, #catalog input {
+    /* Make all the items within the table fill width */
+    display: block;
+    width: 100%;
+}
+
+#catalog tr {
+    margin-top: 2em;
+}
+
+#catalog td {
+    display: block;
+}
+
+#catalog td:first-child {
+    /* Move the quantity selector of each listing to the right of each product name */
+    float: right;
+    width: 4em;
+}
+
+#catalog td:nth-child(2) {
+    font-size: 1.5em;
+}
+
+#catalog ul {
+    margin-left: 2em;
+}
+
 /* Footer rules */
 
 footer {
@@ -174,6 +204,41 @@ footer {
     #nav-list li:hover {
         background-color: white;
         color: gray;
+    }
+
+    /* Format catalog listings as a table again */
+
+    #catalog {
+        display: table;
+        width: 100%;
+    }
+
+    #catalog tbody {
+        display: table-row-group;
+    }
+
+    #catalog tr {
+        display: table-row;
+        margin-top: 0;
+    }
+
+    #catalog input {
+        display: inline;
+        width: 4em;
+    }
+
+    #catalog td {
+        display: table-cell;
+        vertical-align: top;
+        padding: 1em;
+    }
+
+    #catalog td:first-child {
+        width: 5em;
+    }
+
+    #catalog td:last-child {
+        width: 50%;
     }
 
 }
