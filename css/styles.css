@@ -108,6 +108,10 @@ section p, section li {
     font-size: 1.5em;
 }
 
+.card:hover {
+    border: 2px solid grey;
+}
+
 /* Footer rules */
 
 footer {
