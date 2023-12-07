@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags from Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Thomas Mason</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style> /* Page-specific stylesheet */
+
+#portfolio-intro {
+}
+
+#portfolio-intro img {
+    width: 20em;
+    float: right;
+}
+
+#cards {
+    clear: both;
+}
+
+.desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .desktop {
+        display: block;
+    }
+
+    .card-grid-2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 2em;
+    }
+
+}
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <a href="index.html"><img src="images/logo-600x450.jpg"></a>
+        <a href="index.html"><h1>Tank Store</h1></a>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <!-- Hamburger menu for mobile -->
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Store</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main body -->
+    <main class="container">
+
+        <section id="portfolio-intro">
+            <img class="desktop" src="images/thomas-profile-image.jpg" alt="Thomas's profile picture">
+            <h2>Thomas Mason</h2>
+            <p>I'm one of the web developers for Tank Store, and a freelance web-developer / software developer.</p>
+            <p>Skills:</p>
+            <ul>
+                <li>HTML5 &amp; CSS &amp; Javascript</li>
+                <li>PHP &amp; SQL (LAMP Stack)</li>
+                <li>Python</li>
+                <li>C++</li>
+            </ul>
+        </section>
+
+        <div id="cards" class="card-grid-2">
+            <section class="card">
+                <h2>LinkedIn</h2>
+                <p>Hiring? Reach out to me at my LinkedIn account!</p>
+                <a href="https://www.linkedin.com/in/thomas-mason-ba37b9237/" class="btn btn-outline-primary" target="_blank" role="button">LinkedIn &#10140;</a>
+            </section>
+            <section class="card">
+                <h2>My Website</h2>
+                <p>Take a look at some of my projects on my website!</p>
+                <a href="http://thomasm1248.github.io/" target="_blank" class="btn btn-outline-primary" role="button">My Website &#10140;</a>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Tank Store</p>
+        <div id="social-media">
+            <!-- Social media icons here -->
+        </div>
+        <p>Designed by: Tank Store Dev Team</p>
+    </footer>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Our script -->
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
