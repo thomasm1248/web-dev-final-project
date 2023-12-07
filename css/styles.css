@@ -65,6 +65,11 @@ header h1 {
     font-size: 1.5em;
 }
 
+#nav-list li:hover {
+    background-color: white;
+    color: gray;
+}
+
 /* Hero image rules */
 
 #hero-image {
@@ -122,13 +127,6 @@ footer {
     #nav-list ul {
         padding: 10px 0px;
     }
-    
-    #nav-list li {
-        display: inline;
-        margin: 0px;
-        padding: 10px 0px;
-        text-align: center;
-        background-color: none;
 
     #nav-list li {
         display: inline-block;
@@ -156,8 +154,7 @@ footer {
     }
 
     #nav-list li {
-        margin-left: 2em;
-        padding: 0.2em 0.5em;
+        padding: 0.2em 1em;
     }
 
     #nav-list li:hover {
