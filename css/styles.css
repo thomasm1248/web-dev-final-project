@@ -92,6 +92,7 @@ header a:hover {
 /* Main body rules */
 
 section {
+    display: block;
     margin: 1em 0;
     padding: 1em;
 }
@@ -187,7 +188,7 @@ footer {
 /* Responsive design for desktops */
 @media (min-width: 768px) {
 
-    main {
+    .card-grid {
         display: grid;
         grid-template-columns: auto auto auto;
         column-gap: 2em;
