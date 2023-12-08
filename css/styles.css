@@ -219,6 +219,8 @@ footer {
 
     .team .card {
         flex: 1;
+
+    }
     /* Format catalog listings as a table again */
 
     #catalog {
