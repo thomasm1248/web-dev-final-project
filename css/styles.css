@@ -92,6 +92,7 @@ header a:hover {
 /* Main body rules */
 
 section {
+    display: block;
     margin: 1em 0;
     padding: 1em;
 }
@@ -110,6 +111,36 @@ section p, section li {
 
 .card:hover {
     border: 2px solid grey;
+}
+
+/* Catalog table rules */
+
+#catalog, #catalog tbody, #catalog tr, #catalog input {
+    /* Make all the items within the table fill width */
+    display: block;
+    width: 100%;
+}
+
+#catalog tr {
+    margin-top: 2em;
+}
+
+#catalog td {
+    display: block;
+}
+
+#catalog td:first-child {
+    /* Move the quantity selector of each listing to the right of each product name */
+    float: right;
+    width: 4em;
+}
+
+#catalog td:nth-child(2) {
+    font-size: 1.5em;
+}
+
+#catalog ul {
+    margin-left: 2em;
 }
 
 /* Footer rules */
@@ -157,7 +188,7 @@ footer {
 /* Responsive design for desktops */
 @media (min-width: 768px) {
 
-    main {
+    .card-grid {
         display: grid;
         grid-template-columns: auto auto auto;
         column-gap: 2em;
@@ -188,6 +219,39 @@ footer {
 
     .team .card {
         flex: 1;
+    /* Format catalog listings as a table again */
+
+    #catalog {
+        display: table;
+        width: 100%;
+    }
+
+    #catalog tbody {
+        display: table-row-group;
+    }
+
+    #catalog tr {
+        display: table-row;
+        margin-top: 0;
+    }
+
+    #catalog input {
+        display: inline;
+        width: 4em;
+    }
+
+    #catalog td {
+        display: table-cell;
+        vertical-align: top;
+        padding: 1em;
+    }
+
+    #catalog td:first-child {
+        width: 5em;
+    }
+
+    #catalog td:last-child {
+        width: 50%;
     }
 
 }
