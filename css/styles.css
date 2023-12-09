@@ -357,6 +357,11 @@ footer {
 
 }
 
+.social-icon {
+    font-size: 2em; /* Icon size */
+    margin: 5px; /* Spacing between icons */
+}
+
 /* contact us */
 .contact-container {
     display: flex;
