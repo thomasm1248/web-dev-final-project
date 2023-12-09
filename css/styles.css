@@ -372,6 +372,25 @@ footer {
     margin: 5px; /* Spacing between icons */
 }
 
+#portfolio-links {
+    /* Align links in a row */
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 10px; 
+}
+
+.portfolio-link {
+    /* Style your links */
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.portfolio-link:hover {
+    /* Style for hover state */
+    text-decoration: underline; 
+}
+
 /* contact us */
 .contact-container {
     display: flex;
