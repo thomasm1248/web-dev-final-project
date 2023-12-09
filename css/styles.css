@@ -162,8 +162,9 @@ section p, section li {
     width: 4em;
 }
 
-#catalog td:nth-child(2) {
+#catalog td:nth-child(2), #catalog td:nth-child(3) {
     font-size: 1.5em;
+    width: 8em;
 }
 
 #catalog ul {
@@ -338,6 +339,10 @@ footer {
         max-width: 30em;
     }
 
+}
+
+@media (min-width: 992px) {
+
     /* Format catalog listings as a table again */
 
     #catalog {
@@ -367,6 +372,10 @@ footer {
 
     #catalog td:first-child {
         width: 5em;
+    }
+
+    #catalog td:nth-child(3) {
+        width: 10%;
     }
 
     #catalog td:last-child {
