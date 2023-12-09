@@ -102,6 +102,22 @@ header a:hover {
 
 /* Main body rules */
 
+/* CSS for Welcome section */
+#welcome h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS for Featured Tanks section */
+#featured-tanks h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+/* CSS for About Us section */
+#about-us h2 {
+    font-family: 'Merriweather', serif;
+}
+
 section {
     display: block;
     margin: 1em 0;
