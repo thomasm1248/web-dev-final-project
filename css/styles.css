@@ -137,7 +137,7 @@ section p, section li {
 }
 
 .card:hover {
-    border: 2px solid grey;
+    outline:auto;
 }
 
 /* Catalog table rules */
