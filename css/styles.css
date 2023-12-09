@@ -113,7 +113,7 @@ header a:hover {
     font-weight: 700;
 }
 
-/* CSS for About Us section */
+/* CSS for Homepage About Us section */
 #about-us h2 {
     font-family: 'Merriweather', serif;
 }
@@ -170,7 +170,7 @@ section p, section li {
     margin-left: 2em;
 }
 
-/* About Us Rules */
+/* About Us Page Rules */
 .team .card {
     align-items: center;    
 }
@@ -337,7 +337,6 @@ footer {
     .team img {
         max-width: 30em;
     }
-
 
     /* Format catalog listings as a table again */
 
