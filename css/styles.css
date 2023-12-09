@@ -153,6 +153,7 @@ section p, section li {
 }
 
 .team img {
+    max-width: 20em;
     width: 80%;
     height: auto;
 }
