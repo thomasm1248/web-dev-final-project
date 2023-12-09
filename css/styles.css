@@ -159,6 +159,10 @@ section p, section li {
     align-items: center;    
 }
 
+.team .card:hover {
+    border: 1px solid grey;
+}
+
 .team a {
     text-decoration: none;
     color: inherit;
@@ -172,6 +176,11 @@ section p, section li {
     max-width: 20em;
     width: 80%;
     height: auto;
+}
+
+.team img:hover {
+    width: 90%;
+    border: 3px solid lightgrey;
 }
 
 /* Alex Profile Style Rules */
@@ -293,7 +302,7 @@ footer {
 
     .team .card {
         flex: 1;
-
+        margin: auto .5em;
     }
     /* Format catalog listings as a table again */
 
