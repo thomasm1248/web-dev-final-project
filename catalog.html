@@ -12,6 +12,25 @@
     <title>Tank Store Catalog</title>
     <link rel="stylesheet" href="css/styles.css">
 
+    <style> /* Styles for this page specifically */
+
+form {
+    background-color: #aaa;
+    text-align: center;
+    padding: 1em;
+}
+
+#total {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+}
+
+    </style>
+
 </head>
 <body>
 
@@ -40,6 +59,7 @@
             <tr>
                 <td><input type="number" min="0" value="0"></td> <!-- quantity selector -->
                 <td>AMX-30</td> <!-- name -->
+                <td>$400,000,000</td>
                 <td><img src="images/AMX-30.jpg"></td> <!-- image -->
                 <td> <!-- info -->
                     <ul>
@@ -55,6 +75,7 @@
             <tr>
                 <td><input type="number" min="0" value="0"></td> <!-- quantity selector -->
                 <td>M48 Patton</td> <!-- name -->
+                <td>$700,000,000</td>
                 <td><img src="images/M48 Patton.jpg"></td> <!-- image -->
                 <td> <!-- info -->
                     <ul>
@@ -70,6 +91,7 @@
             <tr>
                 <td><input type="number" min="0" value="0"></td> <!-- quantity selector -->
                 <td>M60 tank</td> <!-- name -->
+                <td>$300,000,000</td>
                 <td><img src="images/M60 tank.jpg"></td> <!-- image -->
                 <td> <!-- info -->
                     <ul>
@@ -85,6 +107,7 @@
             <tr>
                 <td><input type="number" min="0" value="0"></td> <!-- quantity selector -->
                 <td>Harimau</td> <!-- name -->
+                <td>$500,000,000</td>
                 <td><img src="images/Harimau.jpg"></td> <!-- image -->
                 <td> <!-- info -->
                     <ul>
@@ -97,11 +120,15 @@
                     </ul>
                 </td>
             </tr>
-            <tr>
-                <td colspan="4">
-                </td>
-            </tr>
         </table>
+
+        <!-- Form for purchasing the tanks -->
+        <form>
+            <p id="total">Total: $0.00</p>
+            <label>Card Number: <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"></label>
+            <label>Phone Number: <input id="phone" type="tel" inputmode="numeric" pattern="[0-9\s]{10,11}" autocomplete="tel" maxlength="30" placeholder="xxx xxx xxxx"></label>
+            <label><input type="submit" value="Place Order" role="button" class="btn btn-primary"></label>
+        </form>
 
     </main>
 
@@ -120,6 +147,9 @@
 
     <!-- Our script -->
     <script src="scripts/script.js"></script>
+
+    <!-- My script for adding the prices of the tanks -->
+    <script src="scripts/catalog.js"></script>
 
 </body>
 </html>
