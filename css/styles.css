@@ -185,7 +185,7 @@ section p, section li {
 }
 
 .team p {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: left;
 }
 
@@ -202,6 +202,10 @@ section p, section li {
 
 .about-header {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#mission {
+    font-size: 1.5em;
 }
 
 /* Alex Profile Style Rules */
@@ -328,7 +332,6 @@ footer {
         width: 30vw;
     }
 
-    .team
 
     /* Format catalog listings as a table again */
 
