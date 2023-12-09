@@ -87,6 +87,17 @@ header a:hover {
     background-size: cover;
     background-position: center;
     height: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+#hero-image span {
+    color: white;
+    font-size: 2em; 
+    z-index: 10;
 }
 
 /* Main body rules */
