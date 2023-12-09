@@ -186,6 +186,7 @@ section p, section li {
 
 .team p {
     font-size: 1em;
+    text-align: left;
 }
 
 .team img {
@@ -197,6 +198,10 @@ section p, section li {
 .team img:hover {
     width: 90%;
     border: 3px solid lightgrey;
+}
+
+.about-header {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /* Alex Profile Style Rules */
@@ -319,7 +324,12 @@ footer {
     .team .card {
         flex: 1;
         margin: auto .5em;
+        display: flex;
+        width: 30vw;
     }
+
+    .team
+
     /* Format catalog listings as a table again */
 
     #catalog {
