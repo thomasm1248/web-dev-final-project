@@ -163,6 +163,47 @@ section p, section li {
     height: auto;
 }
 
+/* Alex Profile Style Rules */
+.resume {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.resume img {
+    width: 80%;
+    max-width: 20em;
+}
+
+.resume h4 {
+    color: blue;
+    font-weight: bold;
+}
+
+.resume p, .resume li {
+    font-size: 1em;
+}
+
+.two-column {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.two-column h1 {
+    color: blue;
+    font-weight: bold;
+}
+
+.two-column p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.two-column div {
+    flex: 1;
+}
+
 /* Footer rules */
 
 footer {
