@@ -102,6 +102,7 @@ header a:hover {
 }
 
 #hero-text {
+    -webkit-animation: darken 1s forwards;
     animation: darken 1s forwards;
     background-color: black;
     width: 100%;
@@ -208,6 +209,7 @@ section p, section li {
     max-width: 20em;
     width: 80%;
     height: auto;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
