@@ -334,6 +334,10 @@ footer {
         width: 30vw;
     }
 
+    .team img {
+        max-width: 30em;
+    }
+
 
     /* Format catalog listings as a table again */
 
