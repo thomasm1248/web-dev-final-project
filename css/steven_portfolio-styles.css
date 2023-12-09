@@ -1,0 +1,86 @@
+/* Global styles for the entire webpage */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Styles for the page header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Styles for the profile image in the header */
+.profile-pic {
+    width: 200px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; 
+}
+
+/* Flexbox setup for the hobbies section */
+.hobby-flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Styles for individual hobby blocks */
+.hobby {
+    flex-basis: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Styles for images inside the hobby blocks */
+.hobby img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Centered text for the dream section */
+#dream {
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive styles for hobbies on medium screens */
+@media (max-width: 768px) {
+    .hobby {
+        flex-basis: 45%;
+    }
+}
+
+/* Responsive styles for hobbies on small screens */
+@media (max-width: 480px) {
+    .hobby-flex-container {
+        flex-direction: column;
+    }
+
+    .hobby {
+        flex-basis: 100%;
+    }
+}
+
+/* Styles for the hacker image in the dream section */
+.hacker-pic {
+    width: auto; 
+	height: auto; 
+    display: block;
+    margin: 10px auto; 
+}
